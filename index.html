@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Currículum Digital</h1>
+
+<form action="insert.php" method="post">
+
+    <div class="first">
+
+        <label>Nombre:</label>
+            <input type="text" name="nombre">
+
+        <label>Apellido(s):</label>
+            <input type="text" name="apellidos">
+
+        <label>Email:</label>
+            <input type="email" name="email">
+
+
+        <label>Teléfono:</label>
+            <input type="number" name="telefono">
+
+        <label>Ciudad o Pueblo:</label>
+            <input type="text" name="ciudad">
+
+        <label>Codigo Postal:</label>
+            <input type="number" name="cp">
+
+    </div>
+
+    <div class="second">
+
+        <h2>ACERCA DE TI</h2>
+        <textarea name="sobre" rows="10"></textarea>
+
+    </div>
+
+    <div class="third">
+        <h2>EXPERIENCIA LABORAL</h2>
+        <textarea name="exp" rows="10"></textarea>
+    </div>
+
+    <div class="checkbox">
+
+        <h2>IDIOMAS</h2>
+
+        <div class="check">
+            <label>ESPAÑOL</label>
+            <input type="checkbox" name="idiomas[]" value="ESPAÑOL">
+
+            <label>INGLÉS</label>
+            <input type="checkbox" name="idiomas[]" value="INGLÉS">
+        </div>
+
+        <div class="check2">
+        <label>ALEMÁN</label>
+        <input type="checkbox" name="idiomas[]" value="ALEMÁN">
+
+        <label>FRANCÉS</label>
+        <input type="checkbox" name="idiomas[]" value="FRANCÉS">
+        </div>
+
+    </div>
+
+    <div class="cv">
+        <label>Subir CV</label>
+        <input type="file">
+    </div>
+
+    <div class="botones">
+        <button type="submit" name="enviar">ENVIAR</button>
+        <button type="reset">BORRAR</button>
+    </div>
+
+
+</form><br><br>
+
+</body>
+</html>
